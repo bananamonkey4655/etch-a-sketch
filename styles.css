@@ -1,4 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+.reset-btn {
+
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     display: grid;
     grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
 }
+
